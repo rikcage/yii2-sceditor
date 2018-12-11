@@ -31,11 +31,23 @@ use rikcage\sceditor\SCEditor;
 <?= $form->field($model, 'text')->widget(SCEditor::className(), [
         'options' => ['rows' => 6],
         'clientOptions' => [
-            'plugins' => 'bbcode',
+            'format' => 'bbcode',
         ]
     ]) ?>
 ```
 
+or
+
+```php
+use rikcage\sceditor\SCEditor;
+
+<?= $form->field($model, 'text')->widget(SCEditor::className(), [
+        'options' => ['rows' => 6],
+        'clientOptions' => [
+            'format' => 'xhtml',
+        ]
+    ]) ?>
+```
 
 Further Information
 -----
