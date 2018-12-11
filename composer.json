@@ -1,0 +1,39 @@
+{
+    "name": "rikcage/yii2-sceditor",
+    "description": "SCEditor, a lightweight WYSIWYG BBCode & HTML editor extension for Yii 2.0 Framework",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","sceditor","bbcode","xhtml","yii"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rik Cage",
+            "email": "rikcage@gmail.com",
+            "homepage": "https://github.com/rikcage/yii2-sceditor"
+        }
+    ],
+    "repositories":[
+        {
+            "type":"package",
+            "package":{
+                "name":"samclarke/sceditor",
+                "version":"master",
+                "dist":{
+                    "type":"zip",
+                    "url":"https://github.com/samclarke/SCEditor/releases/download/v2.1.3/sceditor-2.1.3.zip",
+					"reference":"master"
+                },
+				"autoload": {
+					"classmap": ["."]
+				}
+			}
+		}		
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "rikcage\\sceditor\\": ""
+        }
+    }
+}
